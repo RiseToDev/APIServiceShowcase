@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiConnectionService } from '../API/api-connection.service';
+import { ApiConnectionService } from '../../API/api-connection.service';
 
 export interface PeriodicElement {
   name: string;
@@ -34,7 +34,9 @@ export class TableComponent implements OnInit {
 
   ngOnInit(): void {
     this.apiConnection.get('/user').subscribe(
-      (res) => console.log(res),
+      (res) => {
+        console.log(res);
+      },
       (e) => console.log(e)
     );
   }

@@ -7,25 +7,18 @@
         [disabled]="isRouteSelected('/users')"
         routerLink="/users"
       >
-        Users
+        Пользователи
       </button>
       <button
         class="nav-button"
         mat-button
-        [disabled]="isRouteSelected('/users3')"
-        routerLink="/users3"
+        [disabled]="isRouteSelected('/realty')"
+        routerLink="/realty"
       >
-        Users3
-      </button>
-      <button
-        class="nav-button"
-        mat-button
-        [disabled]="isRouteSelected('/users2')"
-        routerLink="/users2"
-      >
-        Users2
+        Недвижимость
       </button>
     </nav>
   </mat-drawer>
   <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
 </mat-drawer-container>
+<app-loader></app-loader>
