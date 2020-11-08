@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ApiConnectionService} from '../../API/api-connection.service';
+import {ApiConnectionService} from '../../services/api-connection.service';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {NestedTreeControl} from '@angular/cdk/tree';
 import * as moment from 'moment';

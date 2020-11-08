@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ApiConnectionService} from '../../API/api-connection.service';
+import {ApiConnectionService} from '../../services/api-connection.service';
 
 export interface ITableData {
   id: number;
