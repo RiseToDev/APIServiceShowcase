@@ -15,6 +15,9 @@ import { LoaderService } from './services/loader.service';
 import { LoaderInterceptor } from './interceptors/loader.interceptor';
 import { RealtyComponent } from './pages/realty/realty.component';
 import { UsersComponent } from './pages/users/users.component';
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatTreeModule} from "@angular/material/tree";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { UsersComponent } from './pages/users/users.component';
     MatButtonModule,
     MatTableModule,
     MatProgressSpinnerModule,
+    MatExpansionModule,
+    MatTreeModule,
+    MatIconModule
   ],
   providers: [
     LoaderService,
