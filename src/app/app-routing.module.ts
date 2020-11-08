@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { TableComponent } from './components/table/table.component';
-import {LoaderComponent} from "./components/loader/loader.component";
+import { RouterModule, Routes } from '@angular/router';
+import { UsersComponent } from './pages/users/users.component';
+import { RealtyComponent } from './pages/realty/realty.component';
 
 const routes: Routes = [
-  { path: 'users', component: TableComponent },
-  { path: 'realty', component: LoaderComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'realty', component: RealtyComponent },
 ];
 
 @NgModule({
