@@ -21,7 +21,6 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
     this.apiConnection.get('/user').subscribe(
       (res: []) => {
-        console.log(res);
         this.dataSource = res.reduce(function (filtered, user: any) {
           if (user.name) {
             filtered.push({

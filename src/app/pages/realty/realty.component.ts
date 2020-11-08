@@ -46,8 +46,7 @@ export class RealtyComponent implements OnInit {
 
   panelOpenState = false;
   constructor(private apiConnection: ApiConnectionService) {
-    this.dataSource.data = [];
-    window['moment'] = moment;
+    // this.dataSource.data = [];
   }
   hasChild = (_: number, node: IRealty) =>
     !!node.children && node.children.length > 0;
@@ -58,6 +57,7 @@ export class RealtyComponent implements OnInit {
         let rent = [],
           forSale = [],
           other = [];
+
         const resLength = res.length;
         for (let i = 0; i < resLength; i++) {
           const realty: IRealtyEntity = res[i];
