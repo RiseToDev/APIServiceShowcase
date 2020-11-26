@@ -1,0 +1,14 @@
+.search-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.search-page-container mat-form-field {
+  width: 30%;
+}
+
+.query-inputs-form {
+}

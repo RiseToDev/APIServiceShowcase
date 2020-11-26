@@ -17,6 +17,14 @@
       >
         Недвижимость
       </button>
+      <button
+        class="nav-button"
+        mat-button
+        [disabled]="isRouteSelected('/search')"
+        routerLink="/search"
+      >
+        Поиск
+      </button>
     </nav>
   </mat-drawer>
   <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>

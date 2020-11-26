@@ -1,0 +1,35 @@
+<div class="search-page-container">
+  <!--  <mat-form-field class="query-inputs-form">-->
+  <!--    <mat-label>jkt</mat-label>-->
+  <!--    <label>-->
+  <!--      <input matInput type="text" [(ngModel)]="value" />-->
+  <!--    </label>-->
+  <!--    <button-->
+  <!--      mat-button-->
+  <!--      *ngIf="value"-->
+  <!--      matSuffix2-->
+  <!--      mat-icon-button-->
+  <!--      aria-label="Clear"-->
+  <!--      (click)="value = ''"-->
+  <!--    >-->
+  <!--      <mat-icon>close</mat-icon>-->
+  <!--    </button>-->
+  <!--  </mat-form-field>-->
+  <mat-form-field appearance="fill">
+    <mat-label>Поля по которым сортировать</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let option of displayedColumns" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Сортировка</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let option of sortOptions" [value]="option.value">
+        {{ option.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-flat-button color="accent">Поиск</button>
+</div>
