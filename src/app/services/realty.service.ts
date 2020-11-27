@@ -15,6 +15,14 @@ export class RealtyService {
     'street',
     'source',
   ];
-
   getDisplayedColumns = () => this.displayedColumns;
+
+  private queryFields: string[] = [
+    'id',
+    'date',
+    'cost',
+    'currency',
+    'realty_capacity',
+  ];
+  getQueryFields = () => this.queryFields;
 }
