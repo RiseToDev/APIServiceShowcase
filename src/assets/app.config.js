@@ -1,5 +1,5 @@
 (function (window) {
   window.appConfig = window.appConfig || {};
 
-  window.appConfig.baseApiUrl = "http://2dd8f18b7d3c.ngrok.io/api";
+  window.appConfig.baseApiUrl = "https://cad6f9a3281a.ngrok.io/api";
 })(this);

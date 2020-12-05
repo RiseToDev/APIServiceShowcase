@@ -26,8 +26,6 @@ export class SearchComponent implements OnInit {
   sortBy = '';
   fieldSortedBy = '';
 
-  dataSource: ISearchRealty[] = [];
-
   constructor(
     private realtyService: RealtyService,
     private apiConnection: ApiConnectionService
@@ -50,18 +48,17 @@ export class SearchComponent implements OnInit {
                 : r[this.fieldSortedBy];
               return r;
             });
-          console.log(this.requestedData);
         },
-        (e) => {
-          console.log(e);
+        () => {
           this.refreshButtonHandler();
         }
       );
-  };
+  }
 
   refreshButtonHandler = () => {
     this.requestedData = [];
     this.sortBy = '';
     this.fieldSortedBy = '';
-  };
+  }
 }
+
