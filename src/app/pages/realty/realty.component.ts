@@ -5,7 +5,7 @@ import { NestedTreeControl } from '@angular/cdk/tree';
 import * as moment from 'moment';
 import {RealtyService} from '../../services/realty.service';
 
-interface IRealtyEntity {
+export interface IRealtyEntity {
   id: number;
   name: string;
   date: string;

@@ -21,6 +21,7 @@
 .search-page-container .result-list-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 100%;
   white-space: nowrap;
   overflow-x: hidden;
@@ -36,6 +37,16 @@
 .refresh-button {
   display: block;
   top: 5px;
-  left: 5px;
+  left: 120px;
   position: absolute;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  position: sticky;
+  top: 0;
+  background: #424242;
 }
